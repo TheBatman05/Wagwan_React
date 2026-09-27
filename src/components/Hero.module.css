@@ -1,0 +1,82 @@
+#container {
+    min-height: 100vh;
+    background-color: #0A0F1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+#maintxt {
+    margin: 0;
+    color: #f8fafc;
+    font-size: 80px;
+    font-weight: 800;
+    transform: translateY(-40%);
+}
+#idea {
+    color: #818cf8;
+}
+#code {
+    color: #38bdf8;
+}
+#exp {
+    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    background-clip: text;
+    color: transparent;
+}
+#smalltxt{
+    color: rgba(254, 254, 254,0.7);
+    transform: translateY(-400%);
+    font-size: 20px;
+}
+#btncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateY(-100%);
+}
+.btn{
+    height: 40px;
+    width: 200px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: #fefefe;
+    cursor: pointer;
+}
+#services{
+    background-color: #4f46e5;
+    border: none;
+}
+#us{
+    background-color: rgba(250,250,250,0.2);
+    border: 1px solid rgba(254, 254, 254,0.5);
+}
+#card{
+    width: 70vw;
+    height: 20vh;
+    background: linear-gradient(90deg, #4e50c0, #03879f);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30%;
+    color: #fefefe;
+}
+#card p{
+    display: inline-block;
+    font-size: 20px;
+}
+#card span{
+    font-size: 15px;
+}
+#card button{
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
