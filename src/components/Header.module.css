@@ -30,6 +30,8 @@
     color: #fefefe;
     background-color: #4f46e5;
     border-radius: 10px;
+}
+#container ul button:hover{
     transform: translateY(-5px);
 }
 .item{
