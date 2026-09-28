@@ -1,0 +1,244 @@
+#trickspage{
+    background-color: #0a0f1d;
+    width: 100%;
+    height: 230vh;
+}
+#firstbox{
+    width: 150px;
+    height: 20px;
+    color: #06b6d4;
+    background-color: #061e42;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 10px;
+    transform: translateY(200%);
+}
+#matntricks{
+    color: #fefefe;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+}
+#matntrickskam{
+    color: rgb(126, 126, 126);
+    text-align: center;
+    margin-top: 5px;
+
+}
+/* #hr{
+    transform: rotate(90deg) translateX(63%);
+    margin-left: 110vh;
+    width: 55%;
+    border: 1px solid #300089;
+
+}
+.numberbox{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0a0f1d;
+    border: 2px solid #4503c1;
+    color: #4503c1;
+    text-align: center;
+    padding-top: 1px;
+    margin-left: 159vh;
+    margin-top: 20vh;
+} */
+
+ .container{
+    position: relative;
+    width: 70%;
+    height: 800px; 
+     height: 700px;
+    background-color: #0a0f1d;
+    margin: 40px auto;
+    padding-left: 50px;
+ } 
+ #timeline{
+    width: 900px;
+    position: absolute;
+    height: 2px;
+    border-radius: 3px;
+    transform: rotate(90deg);
+    background-color: #300089;
+    top: 440px;
+    bottom: 0;
+    left: -410px;
+    opacity: 0.6;
+ }
+ .numberbox{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0a0f1d;
+    border: 2px solid #4503c1;
+    color: #4503c1;
+    text-align: center;
+    padding-top: 1px;
+    left: 25px;
+    top: 40px;
+    
+} 
+.tricksbox{
+    width: 90%;
+    height: 150px;
+    background-color: #0f172a;
+    position: absolute;
+    left: 80px;
+    border-radius: 25px;
+    border: 1px solid #002135;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.tricksbox:hover{
+    border: 2px solid #08295a;
+}
+.matnbox{
+    color: #fefefe;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.matnbox2{
+    color: rgb(126, 126, 126);
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.box2{
+    top: 200px;
+}
+.matnbox3{
+    top: 180px;
+}
+.box3{
+    top: 380px;
+}
+.matnbox4{
+    top: 360px;
+}
+.box4{
+    top: 580px;
+}
+.matnbox5{
+    top: 550px;
+}
+.box5{
+    top: 760px;
+}
+.matnbox6{
+    top: 740px;
+}
+#real{
+    color: #fefefe;
+    text-align: center;
+    font-size: 30px;
+    margin-top:250px;
+}
+#realproject{
+    color: rgb(126, 126, 126);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.bigbox{
+    width: 27%;
+    height: 150px;
+    margin-top: 40px;
+    background-color: #0f172a;
+    color: #fefefe;
+    border: 1px solid #002135;
+    border-radius: 25px;
+    /* margin-left: 30px; */
+    display: inline-block;
+    position: absolute;
+    transition: 0.3s linear;
+}
+.amoozesh{
+    margin-left:25px;
+    margin-top: 18px;
+    font-size: 18px;
+    left: 10%;
+    
+}
+.amoozesh2{
+   margin-left: 20px;
+   margin-top: 20px;
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+    
+}
+.shomare2{
+    /* left: 490px; */
+    left: 36.5%;
+    /* margin-top: -px; */
+}
+.shomare1{
+    margin-top: 40px;
+    left: 4%;
+}
+.containeramoozesh{
+    width: 100%;
+    width: 400px;
+    position: relative;
+}
+.shomare3{
+    /* left: 980px; */
+    left: 69%;
+}
+.bigbox:hover{
+    border: 2px solid #607697;
+}
+.bigbox:focus{
+    border: 2px solid #5405e6;
+    background-color: #300089;
+}
+#lastbox{
+    width: 60%;
+    height: 320px;
+    margin: 15% auto;
+    border: 1px solid rgba(126, 126, 126, 0.3);
+    border-radius: 20px;
+    position: relative;
+}
+.rangbox{
+    width: 10px;
+    position: absolute;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    left: 60px;
+    top: 30px;
+}
+.green{
+    background-color: green;
+    left:20px ;
+    
+}
+.yellow{
+    background-color: yellow;
+    left: 40px;
+}
+#samplematn{
+    color: #5405e6;
+    position: absolute;
+    font-size: 19px;
+    left: 80%;
+    top: 8%;
+}
+#hr2{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border:1px solid rgba(126, 126, 126, 0.6);
+
+}
+#lastp{
+    color: #317931;
+    position: absolute;
+    top: 130px;
+    left: 3%;
+    white-space: pre-wrap;
+}
