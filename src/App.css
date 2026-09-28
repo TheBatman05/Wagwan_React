@@ -4,6 +4,10 @@
   font-family: Lato;
   /* box-sizing: border-box; */
 }
+body{
+    background-color: #0A0F1D;
+
+}
 /* .App {
   text-align: center;
 }
