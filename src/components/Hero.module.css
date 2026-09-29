@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 6%;
 }
 #maintxt {
     margin: 0;
@@ -22,9 +22,27 @@
     color: #38bdf8;
 }
 #exp {
-    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #06b6d4,
+        #6366f1,
+        #06b6d4,
+        #6366f1
+    );
     background-clip: text;
     color: transparent;
+    background-size: 200% 100%;
+    animation: gradiantmove 1.5s linear infinite;
+}
+
+@keyframes gradiantmove {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
 }
 #smalltxt{
     color: rgba(254, 254, 254,0.7);
