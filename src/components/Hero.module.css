@@ -1,12 +1,12 @@
 #container {
     min-height: 100vh;
-    background-color: #0A0F1D;
+    /* background-color: #0A0F1D; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 10%;
 }
 #maintxt {
     margin: 0;
@@ -16,19 +16,19 @@
     transform: translateY(-40%);
 }
 #idea {
-    color: #818cf8;
+    color: #6B8F71;
 }
 #code {
-    color: #38bdf8;
+    color: #6B8F71;
 }
 #exp {
     background: linear-gradient(
         90deg,
-        #6366f1,
-        #06b6d4,
-        #6366f1,
-        #06b6d4,
-        #6366f1
+        #6B8F71,
+        #A8C0A5,
+        #8fa77f,
+        #A8C0A5,
+        #6B8F71
     );
     background-clip: text;
     color: transparent;
@@ -41,11 +41,11 @@
         background-position: 0% 50%;
     }
     to {
-        background-position: 100% 50%;
+        background-position: 200% 50%;
     }
 }
 #smalltxt{
-    color: rgba(254, 254, 254,0.7);
+    color: rgb(245, 196, 81,0.7);
     transform: translateY(-400%);
     font-size: 20px;
 }
@@ -65,23 +65,32 @@
     cursor: pointer;
 }
 #services{
-    background-color: #4f46e5;
+    background-color: #6B8F71;
+    color: #F5F7F2;
     border: none;
 }
 #us{
     background-color: rgba(250,250,250,0.2);
-    border: 1px solid rgba(254, 254, 254,0.5);
+    border: 1px solid rgb(245, 196, 81,0.5);
 }
 #card{
     width: 70vw;
     height: 20vh;
-    background: linear-gradient(90deg, #4e50c0, #03879f);
+    background: linear-gradient(
+    135deg,
+    #0F232C 0%,
+    #132F3A 50%,
+    #1B2932 100%
+);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:30%;
     color: #fefefe;
+    border: 1px solid rgb(245, 196, 81,0.5);
+    transition: all 0.3s ease;
+    margin-top: 7%;
 }
 #card p{
     display: inline-block;
@@ -97,4 +106,12 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
+    background-color: #F5C451;
+}
+#card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(245, 196, 81, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
 }
