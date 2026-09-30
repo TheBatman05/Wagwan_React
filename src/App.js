@@ -7,12 +7,14 @@ import Laerning from "./components/Learning"
 
 function App() {
   return(
-    <>
+    
+    <body>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <Laerning />
       <Footer />
-    </>
+      </body>
+    
   );
 }
 
