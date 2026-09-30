@@ -23,11 +23,11 @@
 }
 #exp {
     background: linear-gradient(
-        90deg,
+        125deg,
         #6B8F71,
-        #A8C0A5,
+        #c1d0bf,
         #8fa77f,
-        #A8C0A5,
+        #c1d0bf,
         #6B8F71
     );
     background-clip: text;
@@ -109,7 +109,8 @@
     background-color: #F5C451;
 }
 #card:hover {
-    transform: translateY(-8px);
+    /* transform: translateY(-8px); */
+    transform: scale(1.01);
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.28),
         0 0 25px rgba(245, 196, 81, 0.06),

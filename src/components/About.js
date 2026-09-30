@@ -5,7 +5,7 @@ const About = () =>{
     return(
         <div id ={styles.container}>
             <span id={styles.about}>About Us!</span>
-            <p id={styles.meet}>Meet the People Behind the Code</p>
+            <p id={styles.meet}>Meet the People Behind the <span>Code</span></p>
             <p id={styles.smalltxt}>
                 We’re a passionate team of developers and designers who turn ideas into thoughtful digital experiences. <br />
                  With creativity, collaboration, and clean code,
