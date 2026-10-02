@@ -22,7 +22,7 @@ function App() {
         </Routes>
       
       <Footer />
-    </body>
+      </body>
   </BrowserRouter>
     
   );
