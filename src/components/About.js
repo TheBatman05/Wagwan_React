@@ -5,7 +5,7 @@ const About = () =>{
     return(
         <div id ={styles.container}>
             <span id={styles.about}>About Us!</span>
-            <p id={styles.meet}>Meet the People Behind the Code</p>
+            <p id={styles.meet}>Meet the People Behind the <span>Code</span></p>
             <p id={styles.smalltxt}>
                 We’re a passionate team of developers and designers who turn ideas into thoughtful digital experiences. <br />
                  With creativity, collaboration, and clean code,
@@ -28,33 +28,41 @@ const About = () =>{
                 />
             </div>
             <p id={styles.btitle}>Our Team Strengths:</p>
-            <div className={styles.txtbox}>
-                <Strengths 
-                    title="Clean Code"
-                    matn="We focus on writing clean, organized, and maintainable code." 
-                />
-                <Strengths 
-                    title="Creative Thinking"
-                    matn="We turn ideas into modern, practical, and engaging digital experiences." 
-                />
-                <Strengths 
-                    title="Fast Learning"
-                    matn="We constantly learn new technologies and improve our development skills." 
-                />
-            </div>
-            <div className={styles.txtbox}>
-                <Strengths 
-                    title="Teamwork"
-                    matn="We communicate, share ideas, and work together to build better products." 
-                />
-                <Strengths 
-                    title="Problem Solving"
-                    matn="We approach challenges with logical thinking and find effective solutions." 
-                />
-                <Strengths 
-                    title="Attention to Detail"
-                    matn="We care about the small details that make our products polished and reliable." 
-                />
+            <div id={styles.strng}>
+                <div className={styles.txtbox}>
+                    <Strengths 
+                        title="Clean Code"
+                        matn="We focus on writing clean, organized, and maintainable code." 
+                        number="1"
+                    />
+                    <Strengths 
+                        title="Creative Thinking"
+                        matn="We turn ideas into modern, practical, and engaging digital experiences." 
+                        number="2"
+                    />
+                    <Strengths 
+                        title="Fast Learning"
+                        matn="We constantly learn new technologies and improve our development skills."
+                        number="3" 
+                    />
+                </div>
+                <div className={styles.txtbox}>
+                    <Strengths 
+                        title="Teamwork"
+                        matn="We communicate, share ideas, and work together to build better products." 
+                        number="4"
+                    />
+                    <Strengths 
+                        title="Problem Solving"
+                        matn="We approach challenges with logical thinking and find effective solutions." 
+                        number="5"
+                    />
+                    <Strengths 
+                        title="Attention to Detail"
+                        matn="We care about the small details that make our products polished and reliable." 
+                        number="6"
+                    />
+                </div>
             </div>
             <div id={styles.card}>
                     <p>

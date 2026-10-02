@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css"
+import { Link } from "react-router-dom";
 const Hero = () =>{
     return(
             <div id={styles.container}>
@@ -12,12 +13,12 @@ const Hero = () =>{
                     we build experiences that make a difference.
                 </p>
                 <div id={styles.btncontainer}>
-                    <button className={styles.btn} id={styles.services}>
+                    <Link to="/Services"><button className={styles.btn} id={styles.services}>
                         Our Services →
-                    </button>
-                    <button className={styles.btn} id={styles.us}>
+                    </button></Link>
+                    <Link to="/About"><button className={styles.btn} id={styles.us}>
                         About Us!
-                    </button>
+                    </button></Link>
                 </div>
                 <div id={styles.card}>
                     <p>

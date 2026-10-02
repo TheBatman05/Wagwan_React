@@ -6,13 +6,11 @@
 #container ul button{
     display: inline-block;
     color: #fefefe;
-    /* margin-top: 10%; */
     cursor: pointer;
-    /* border: 1px solid #4f46e5; */
     border: none;
     border-radius: 10px;
-    /* background-color: #1e293b; */
-    background-color: #0f172a;
+    background-color: #0F232C
+;
     height: 50px;
     width: 80px;
     font-size: 16px;
@@ -27,7 +25,7 @@
     padding: 0;
 }
 #container{
-    background-color: #0f172a;
+    background-color: #0F232C;
     height: 15vh;
     display: flex;
     align-items: center;
@@ -36,7 +34,7 @@
 }
 #container ul button:focus{
     color: #fefefe;
-    background-color: #4f46e5;
+    background-color: #08141A;
     border-radius: 10px;
 }
 #container ul button:hover{

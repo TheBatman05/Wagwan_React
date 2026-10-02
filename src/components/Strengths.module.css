@@ -1,26 +1,52 @@
-#container{
+#container {
     width: 350px;
-    height: 125px;
-    background-color: rgb(99, 102, 241,0.4);
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    padding: 28px;
     color: #fefefe;
-    border-radius: 15px;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
     cursor: pointer;
-    font-size: 30px;
-    padding: 20px;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.08);
 }
-#container:hover{
-    background-color: rgb(99, 102, 241,0.7);
-    box-shadow: 0px 5px 15px rgb(254, 254, 254,0.3);
-    transform: translateY(-5px);
+#number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgba(245, 196, 81, 0.12);
+    transition: color 0.3s ease;
 }
-#smalltxt{
-    font-size: 17px;
-    color: rgb(254, 254, 254,0.7);
-    display: block;
-    margin-top: 5%;
+#title {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 700;
+    color: rgba(254, 254, 254, );
+}
+#smalltxt {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 290px;
+    color: rgb(245, 196, 81,.8);
+}
+#container:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(245, 196, 81, 0.3);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(245, 196, 81, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+#container:hover #number{
+    color: rgba(245, 196, 81, 0.5);
+
 }
