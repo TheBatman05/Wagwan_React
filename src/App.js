@@ -11,9 +11,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
   return(
   <BrowserRouter>
-    <>
+    <body>
       <Header />
-      {/* <Hero /> */}
+      <Hero />
       <Laerning />
         <Routes>
           <Route path="/" element={<Hero />} />
@@ -22,8 +22,9 @@ function App() {
         </Routes>
       
       <Footer />
-    </>
+    </body>
   </BrowserRouter>
+    
   );
 }
 export default App;
