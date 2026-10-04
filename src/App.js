@@ -12,20 +12,18 @@ import Contact from "./components/Contact"
 function App() {
   return(
   <BrowserRouter>
-    <body>
+    <>
       <Header />
-      <Hero />
-      <Laerning />
+      {/* <Hero /> */}
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Learning" element={<Laerning />} />
         </Routes>
-      
-      <Contact />
       <Footer />
-      </body>
+      </>
   </BrowserRouter>
   );
 }

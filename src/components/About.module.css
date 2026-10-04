@@ -102,3 +102,6 @@ border: 1px solid rgba(255, 255, 255, 0.25);
         0 0 25px rgba(245, 196, 81, 0.06),
         inset 0 1px 1px rgba(255, 255, 255, 0.12);
 }
+#txtbox{
+    transform: translateY(-20%);
+}

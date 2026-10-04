@@ -5,9 +5,9 @@ const Contact = () =>{
     const [name, setName] = useState("");
     return(
         <div id={styles.contactbox}>
-            <div id={styles.firstbox}><p>Get in touch with our team members.</p><p id={styles.matnkam}>For project orders, React consulting, or feedback, contact us.</p></div>
+            <div id={styles.firstbox}><p>Get in touch with our team members.</p><p id={styles.matnkam}>For project orders, React consulting, feedback or contact us.</p></div>
             <div id={styles.contact}>
-                <div className={`${styles.box} ${styles.box1}`}> <p id={styles.lastmatn}>Message Form to the Team</p> <div className={styles.inputname}> <label htmlFor="name">Your Name :</label><br /><input type="text" placeholder="Your Name" id="name" className={styles.name} /> <div className={styles.inputmail}> <label htmlFor="mail">Your Mail :</label><br /><input type="mail" placeholder="yourmail@gmail.com" id="mail" className={styles.maile} /> </div></div>
+                <div className={`${styles.box} ${styles.box1}`}> <p id={styles.lastmatn}>Message Form to the Team</p> <div className={styles.inputname}> <label htmlFor="name">Your Name :</label><br /><input type="text" placeholder="Your Name" id="name" className={styles.name} /> <div className={styles.inputmail}> <label htmlFor="mail">Your Mail :</label><br /><input type="Email" placeholder="yourmail@gmail.com" id="mail" className={styles.maile} /> </div></div>
                 <div className={styles.inputmeasage}> <label htmlFor="mas">Message Subject :</label><br /><input type="text" placeholder="Collaboration Request or Web Development Order" id="mas" className={styles.mas} /> </div>
                 <div className={styles.inputmastext}> <label htmlFor="mastext">Message Text :</label><br /><input type="text" placeholder="Write a brief description of your request or question…" id="mastext" className={styles.mastext} /> </div>
                 <button id={styles.butten}>Send Message</button></div>

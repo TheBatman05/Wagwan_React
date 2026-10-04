@@ -1,7 +1,7 @@
 #trickspage{
     /* background-color: #0a0f1d; */
     width: 100%;
-    height: 230vh;
+    height: 250vh;
 }
 #firstbox{
     width: 150px;
@@ -119,7 +119,8 @@
     color: rgb(126, 126, 126);
     padding-top: 20px;
     padding-left: 30px;
-}
+    padding-right: 30px;
+} 
 .box2{
     top: 235px;
 }
@@ -169,11 +170,12 @@
     border-radius: 25px;
     /* margin-left: 30px; */
     display: inline-block;
-    position: absolute;
+    /* position: absolute; */
     transition: 0.3s linear;
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.18),
         inset 0 1px 1px rgba(255, 255, 255, 0.08);
+    cursor: pointer;
 }
 .amoozesh{
     margin-left:25px;
@@ -206,6 +208,8 @@
 .shomare3{
     /* left: 980px; */
     left: 63.5%;
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
 }
 .bigbox:hover{
     transform: translateY(-8px);
@@ -233,6 +237,7 @@
     border: 1px solid rgba(245, 196, 81, 50%) ;
     border-radius: 20px;
     position: relative;
+    transform: translateY(-50%);
 }
 .rangbox{
     width: 10px;
@@ -256,7 +261,7 @@
     color: #018d0a;
     position: absolute;
     font-size: 19px;
-    left: 80%;
+    left: 86%;
     top: 8%;
 }
 #hr2{
@@ -273,4 +278,10 @@
     top: 130px;
     left: 3%;
     white-space: pre-wrap;
+}
+#bbcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
 }

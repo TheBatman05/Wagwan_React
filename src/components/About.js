@@ -46,7 +46,7 @@ const About = () =>{
                         number="3" 
                     />
                 </div>
-                <div className={styles.txtbox}>
+                <div className={styles.txtbox} id={styles.txtbox}>
                     <Strengths 
                         title="Teamwork"
                         matn="We communicate, share ideas, and work together to build better products." 

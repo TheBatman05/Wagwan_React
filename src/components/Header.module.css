@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    /* overflow: hidden; */
 }
 #container ul button:focus{
     color: #fefefe;
@@ -86,4 +87,110 @@
 #c{
     animation: move 0.5s ease 0.4s alternate infinite;
     display: inline-block;
+}
+#brand {
+    display: flex;
+    align-items: center;
+}
+
+#menuButton {
+    display: none;
+}
+@media (max-width: 768px) {
+
+    #container {
+        height: 75px;
+    }
+
+    #brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    #img {
+        position: static;
+        width: 42px;
+        height: 42px;
+    }
+
+    #container #name {
+        position: static;
+        margin-left: 8px;
+        font-size: 20px;
+    }
+
+    #coding {
+        left: 20px;
+        right: auto;
+        font-size: 10px;
+    }
+
+    #menuButton {
+        display: block;
+        position: absolute;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        background-color: #08141A;
+        color: #fefefe;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #container ul {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #0F232C;
+        padding: 15px 0;
+    }
+
+    #container ul.open {
+        display: flex;
+    }
+
+    .item {
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    #container ul button {
+        width: 90%;
+        height: 45px;
+    }
+}
+@media (max-width: 1200px) {
+
+    #img {
+        left: 2%;
+        width: 45px;
+        height: 45px;
+    }
+
+    #container #name {
+        left: 7%;
+        font-size: 21px;
+    }
+
+    #coding {
+        right: 3%;
+        font-size: 21px;
+    }
+
+    #container ul .item {
+        padding: 10px 5px;
+    }
+
+    #container ul button {
+        width: 70px;
+        font-size: 14px;
+    }
 }

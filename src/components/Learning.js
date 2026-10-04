@@ -1,6 +1,8 @@
 import styles from "./Laerning.module.css"
+import { useState } from "react";
 
 const Laerning = () =>{
+    const [selectedTrick, setSelectedTrick] = useState(1);
     return(
        <div id={styles.trickspage}>
         <div id={styles.firstbox}>React Tutorial and Roadmap</div>
@@ -46,9 +48,11 @@ const Laerning = () =>{
         </div>
        <div id={styles.containeramoozesh}> <p id={styles.real}>Practical React tricks in real-world projects</p>
         <p id={styles.realproject}>Techniques that help make your application cleaner and faster.</p>
-        <div className={`${styles.bigbox} ${styles.shomare1}`} tabIndex={0}> <p className={styles.amoozesh}>Trick 1: Optimizing Renders with useMemo and useCallback</p><p className={styles.amoozesh2}>Avoid recalculating heavy functions on every render with the useMemo hook, and keep function references stable with useCallback.</p></div>
-        <div className={`${styles.bigbox} ${styles.shomare2}`} tabIndex={0}> <p className={styles.amoozesh}>Trick 2: Creating a Custom Hook</p><p className={styles.amoozesh2}>Encapsulate shared logic between multiple components, like page dimensions, data fetching, or form management, in an independent hook.</p></div>
-        <div className={`${styles.bigbox} ${styles.shomare3}`} tabIndex={0}> <p className={styles.amoozesh}>Trick 3: Cleaning Up Side Effects in useEffect</p><p className={styles.amoozesh2}>Always clean up event listeners, timers, and WebSocket connections in the return function of the useEffect hook to prevent memory leaks.</p></div>
+        <div id={styles.bbcontainer}>
+            <div tabIndex={0} className={`${styles.bigbox} ${styles.shomare1}`} onClick={() => setSelectedTrick(1)}> <p className={styles.amoozesh}>Trick 1: Optimizing Renders with useMemo and useCallback</p><p className={styles.amoozesh2}>Avoid recalculating heavy functions on every render with the useMemo hook, and keep function references stable with useCallback.</p></div>
+            <div tabIndex={0} className={`${styles.bigbox} ${styles.shomare1}`} onClick={() => setSelectedTrick(2)}> <p className={styles.amoozesh}>Trick 2: Creating a Custom Hook</p><p className={styles.amoozesh2}>Encapsulate shared logic between multiple components, like page dimensions, data fetching, or form management, in an independent hook.</p></div>
+            <div tabIndex={0} className={`${styles.bigbox} ${styles.shomare1}`}onClick={() => setSelectedTrick(3)}> <p className={styles.amoozesh}>Trick 3: Cleaning Up Side Effects in useEffect</p><p className={styles.amoozesh2}>Always clean up event listeners, timers, and WebSocket connections in the return function of the useEffect hook to prevent memory leaks.</p></div>
+       </div>
        </div>
        <div id={styles.lastbox}>
         <div className={`${styles.rangbox} ${styles.red}`}></div>
@@ -56,15 +60,40 @@ const Laerning = () =>{
         <div className={`${styles.rangbox} ${styles.yellow}`}></div>
         <p id={styles.samplematn}>Sample code</p>
         <hr id={styles.hr2}/>
-        <p id={styles.lastp}>{`import { useState } from 'react';
+        <p id={styles.lastp}>
+            {/* {`import { useState } from 'react';
 
-export default function LikeButton() {
-  const [likes, setLikes] = useState(0);
+            export default function LikeButton() {
+            const [likes, setLikes] = useState(0);
 
-  return (
-    <button onClick={() => setLikes(likes + 1)}>
-      ❤️ {likes} لایک
-    </button>);}`}</p>
+            return (
+                <button onClick={() => setLikes(likes + 1)}>
+                ❤️ {likes} لایک
+                </button>);}`} */}
+            {selectedTrick === 1 && `const result = useMemo(
+  () => expensiveCalculation(data),
+  [data]
+);
+
+const handleClick = useCallback(
+  () => selectItem(id),
+  [id]
+);`}
+            {selectedTrick === 2 && `function useToggle() {
+  const [open, setOpen] = useState(false);
+
+  const toggle = () => setOpen(!open);
+
+  return [open, toggle];
+}`}
+            {selectedTrick === 3 && `useEffect(() => {
+  window.addEventListener("resize", handleResize);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);`}
+        </p>
        </div>
        </div>
 
