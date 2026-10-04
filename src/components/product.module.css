@@ -1,0 +1,100 @@
+.khar{
+    color: #fefefe;
+    width: 25%;
+    height: 500px;
+   position: relative;
+   display: inline-block;
+   left: 5%;
+   right: 10px;
+   /* padding-left: 100px; */
+   padding-right: 60px;
+   padding-top: 100px;
+   background-color: rgba(255, 255, 255, 0.07);
+   overflow: hidden;
+   border-radius: 20px;
+   margin-left: 15px;
+   margin-top: 10px;
+   transition: 0.3s linear;
+   
+
+
+}
+.khar:hover{
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(245, 196, 81, 0.3);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(245, 196, 81, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+.aks2{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+.aks{
+    width: 60%;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    left:50%;
+    top: 2%;
+    transform: translateX(-50%);
+    border-radius: 18px;
+    border:  rgba(245, 196, 81, 0.63);
+}
+.shopcard h1{
+    position: absolute;
+    top: 2%;
+}
+.countBox{
+    position: absolute;
+    top: 88%;
+    right: 10%;
+}
+#name{
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    text-align: center;
+
+}
+.btn{
+    border: none;
+    color: #051131;
+    background-color: rgba(245, 196, 81, 100%);
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#span{
+    position: absolute;
+    top: 87%;
+    left: 10%;
+    font-size: 27px;
+}
+.promojoodi{
+    position: absolute;
+    top: 94%;
+    right: 11%;
+}
+#details{
+    position: absolute
+    ;
+    top: 57%;
+    left: 5%;
+    color: rgb(157, 157, 157);
+}
+#hr{
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    right: 5%;
+}
