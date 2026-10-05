@@ -117,18 +117,15 @@
         inset 0 1px 1px rgba(255, 255, 255, 0.12);
 }
 @media (max-width: 768px) {
-
     #container {
         min-height: auto;
         padding: 80px 20px 50px;
     }
-
     #maintxt {
         font-size: 45px;
         transform: none;
         line-height: 1.15;
     }
-
     #smalltxt {
         transform: none;
         font-size: 16px;
@@ -136,18 +133,15 @@
         max-width: 350px;
         margin-top: 25px;
     }
-
     #btncontainer {
         transform: none;
         flex-direction: column;
         gap: 15px;
         margin-top: 25px;
     }
-
     .btn {
         width: 220px;
     }
-
     #card {
         width: 90%;
         height: auto;
@@ -159,17 +153,14 @@
         box-sizing: border-box;
         text-align: center;
     }
-
     #card p {
         font-size: 18px;
         margin: 0;
         line-height: 1.5;
     }
-
     #card span {
         font-size: 14px;
     }
-
     #card button {
         width: 220px;
         height: 50px;

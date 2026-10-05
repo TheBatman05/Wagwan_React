@@ -32,6 +32,7 @@ const ProductCard = ({proname, proaks , proinfo, proprice, promojoodi}) => {
             </div>
             <p className={styles.promojoodi}>{promojoodi - count} Remained</p>
         </div></div>
+       
     );
 }
 export default ProductCard;

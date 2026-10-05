@@ -12,12 +12,14 @@ const Shop = () =>{
         console.log(products)
     },[]);
     return(
-        <div>
+        <>
             <h1 className={styles.title}>Products</h1>
-            {products.map((pro) => (
-                <ProductCard key={pro.id} proaks={pro.image} proname={pro.name} proinfo={pro.detail} proprice={pro.price} promojoodi={pro.stock} />
-            ))}
-        </div>
+            <div id={styles.container}>
+                {products.map((pro) => (
+                    <ProductCard key={pro.id} proaks={pro.image} proname={pro.name} proinfo={pro.detail} proprice={pro.price} promojoodi={pro.stock} />
+                ))}
+            </div>
+        </>
     );
 }
 export default Shop;

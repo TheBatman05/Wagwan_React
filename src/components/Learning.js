@@ -5,9 +5,13 @@ const Laerning = () =>{
     const [selectedTrick, setSelectedTrick] = useState(1);
     return(
        <div id={styles.trickspage}>
-        <div id={styles.firstbox}>React Tutorial and Roadmap</div>
-        <p id={styles.matntricks}>Where should we start learning React?</p>
-        <p id={styles.matntrickskam}>Our team's hands-on guide for those who want to enter the amazing world of React from zero, without confusion.</p>
+        {/* <div id={styles.firstbox}>React Tutorial and Roadmap</div> */}
+        <span id={styles.about}>Learning</span>
+        {/* <p id={styles.matntricks}>Where should we start learning React?</p> */}
+        <p id={styles.title}>Where should we start learning <span>React</span>?</p>
+        <p id={styles.smalltxt}>
+                Our team's hands-on guide for those who want to enter the amazing world of React from zero, without confusion.
+        </p>
         {/* <hr id={styles.hr} /> */}
         {/* <div className={styles.numberbox}>1</div> */}
         <div className={styles.container}>

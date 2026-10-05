@@ -8,6 +8,7 @@ import About from "./components/About"
 import Services from "./components/Services"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Contact from "./components/Contact"
+import Shop from "./components/Shop"
 
 function App() {
   return(
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Learning" element={<Laerning />} />
+          <Route path="/Shop" element={<Shop />} />
         </Routes>
       <Footer />
       </>

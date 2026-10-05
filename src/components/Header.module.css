@@ -194,3 +194,8 @@
         font-size: 14px;
     }
 }
+.active {
+    color: #fefefe;
+    background-color: #08141A !important;
+    border-radius: 10px;
+}

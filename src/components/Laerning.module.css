@@ -3,6 +3,30 @@
     width: 100%;
     height: 250vh;
 }
+#about{
+    position: absolute;
+    text-align: center;
+    color: rgb(254, 254, 254,0.7);
+    background-color: rgb(107, 143, 113,.7);
+    border-radius: 20px;
+    transform: translate(-50%,-200%);
+    left: 50%;
+    /* top: 5%; */
+    font-size: 15px;
+    width: 80px;
+    height: 20px;
+    padding: 3px;
+}
+#title{
+    color: #E4F3F6;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+#title span{
+    color: #6B8F71 !important; 
+}
 #firstbox{
     width: 150px;
     height: 20px;
@@ -81,7 +105,7 @@
     border: 2px solid #1a8c2d;
     color: #287f0b;
     text-align: center;
-    padding-top: 3px;
+    padding-top: 4px;
     left: 25px;
     top: 60px;
     box-shadow:
@@ -120,7 +144,8 @@
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-} 
+}
+
 .box2{
     top: 235px;
 }
@@ -179,38 +204,37 @@
 }
 .amoozesh{
     margin-left:25px;
+    margin-right: 25px;
     margin-top: 18px;
     font-size: 18px;
     left: 11.5%;
-    
 }
 .amoozesh2{
    margin-left: 20px;
+   margin-right: 20px;
    margin-top: 20px;
     font-size: 12px;
     color: rgb(126, 126, 126);
     
 }
-.shomare2{
-    /* left: 490px; */
+/* .shomare2{
+
     left: 37.5%;
-    /* margin-top: -px; */
-}
-.shomare1{
+
+} */
+/* .shomare1{
     margin-top: 40px;
     left: 11.5%;
-}
+} */
 .containeramoozesh{
     width: 100%;
     width: 400px;
     position: relative;
 }
-.shomare3{
-    /* left: 980px; */
+/* .shomare3{
+
     left: 63.5%;
-    /* padding: 20px; */
-    /* box-sizing: border-box; */
-}
+} */
 .bigbox:hover{
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.10);
@@ -233,7 +257,7 @@
 #lastbox{
     width: 60%;
     height: 320px;
-    margin: 15% auto;
+    margin: 230px auto;
     border: 1px solid rgba(245, 196, 81, 50%) ;
     border-radius: 20px;
     position: relative;
@@ -261,12 +285,12 @@
     color: #018d0a;
     position: absolute;
     font-size: 19px;
-    left: 86%;
+    left: 85%;
     top: 8%;
 }
 #hr2{
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 30px;
     border:1px solid rgba(245, 196, 81, 50%);
 
@@ -284,4 +308,11 @@
     justify-content: center;
     align-items: center;
     gap: 3%;
+}
+#smalltxt{
+    color: #E4F3F6;
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
 }

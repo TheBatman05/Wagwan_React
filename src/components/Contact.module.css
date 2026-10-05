@@ -1,8 +1,8 @@
 #contactbox{
     width: 100%;
     min-height: 100vh ;
+    padding-bottom: 5%;
     /* background-color: aliceblue; */
-    padding-bottom: 10%;
 }
 #firstbox{
      color: transparent;
@@ -39,31 +39,38 @@
     display: inline-block;
     border-radius: 25px;
     position: absolute;
+    /* text-align: center; */
+    transition: 0.3s linear;
 }
 .box1{
     width: 55%;
     height: 580px;
-    margin-left: 42%;
+    margin-left: 39.5%;
     top: 20px;
+    font-size: 21px;
     
 }
 .box2{
-    width: 35%;
+    width: 30%;
     height: 180px;
-    left: 5%;
+    left: 7.5%;
+    font-size: 22px;
     top: 20px;
+    /* text-align: center; */
     
 }
 .box3{
-    width: 35%;
+    width: 30%;
     height: 180px;
-    left: 5%;
+    left: 7.5%;
+    font-size: 22px;
     top: 220px;
 }
 .box4{
-    width: 35%;
+    width: 30%;
     height: 180px;
-    left: 5%;
+    left: 7.5%;
+    font-size: 22px;
     top: 420px;
 }
 .maillogo{
@@ -77,17 +84,19 @@
     color: #fefefe;
     position: absolute;
     left: 5%;
+    /* transform: translateX(-50%); */
     top: 30%;
-    font-size: 20px;
+    font-size: 22px;
 }
 .mail{
-    color: rgb(157, 157, 157);
+    color: rgba(245, 196, 81, 70%);
     position: absolute;
     left: 5%;
     top: 50%;
+    font-size: 17px;
 }
 .inputname{
-    width: 400px;
+    width: 52%;
     height: 200px;
     position: absolute;
     margin: 150px 40px;
@@ -106,10 +115,12 @@
     left: 5%;
     padding-left: 5%;
     border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fefefe;
+    border-radius: 20px;
 
 }
 .inputmail{
-    width: 70%;
+    width: 66%;
     height: 200px;
     position: absolute;
     margin: 0px 40px;
@@ -129,6 +140,8 @@
     left: -2%;
     padding-left: 5%;
     border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fefefe;
+    border-radius: 20px;
 }
 .inputmeasage{
     width: 100%;
@@ -151,6 +164,7 @@
     left: 2%;
     padding-left: 5%;
     border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fefefe;
 }
 .inputmastext{
       width: 100%;
@@ -167,6 +181,7 @@
 .mastext{
     border-radius: 25px;
     background-color: #08141A;
+    color: #fefefe;
     /* border: none; */
     width: 83%;
     height: 70px;
@@ -199,6 +214,43 @@
     top: 4%;
     left:3%
 }
-input{
-    color: #fefefe;
+.box:hover{
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(245, 196, 81, 0.3);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(245, 196, 81, 0.06),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+#about{
+    position: absolute;
+    text-align: center;
+    color: rgb(254, 254, 254,0.7);
+    background-color: rgb(107, 143, 113,.7);
+    border-radius: 20px;
+    transform: translate(-50%,-200%);
+    left: 50%;
+    /* top: 5%; */
+    font-size: 15px;
+    width: 80px;
+    height: 20px;
+    padding: 3px;
+}
+#title{
+    color: #E4F3F6;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+#title span{
+    color: #6B8F71 !important; 
+}
+#smalltxt{
+    color: #E4F3F6;
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
 }
