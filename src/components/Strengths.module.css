@@ -50,3 +50,49 @@
     color: rgba(245, 196, 81, 0.5);
 
 }
+@media (max-width: 1000px) {
+
+    #container {
+        width: 85vw;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    #smalltxt {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #container {
+        width: calc(100vw - 40px);
+        max-width: 350px;
+        min-height: 140px;
+
+        padding: 22px;
+        box-sizing: border-box;
+
+        border-radius: 18px;
+    }
+
+    #number {
+        top: 15px;
+        right: 18px;
+        font-size: 38px;
+    }
+
+    #title {
+        font-size: 20px;
+        padding-right: 35px;
+    }
+
+    #smalltxt {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 100%;
+        padding-right: 5px;
+    }
+}

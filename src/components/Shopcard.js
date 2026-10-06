@@ -1,38 +1,67 @@
-import styles from "./product.module.css" 
+import styles from "./product.module.css";
 import { useState } from "react";
 
+function ProductCard({ proname, proaks, proinfo, proprice, promojoodi }) {
 
+    const [count, setCount] = useState(0);
 
-
-const ProductCard = ({proname, proaks , proinfo, proprice, promojoodi}) => {
-    const [count, setCount] = useState(0); 
     return (
-        <div className={styles.khar}>
-        <div className={`${styles.shopcard} ${promojoodi == 0 ? styles.disabled : ""}`}>
-            <h1 id={styles.name}>{proname}</h1>
-            <div className={styles.aks}><img className={styles.aks2} src={proaks} alt="" /></div>
-            <p id={styles.details}>details : {proinfo}</p>
-            <span id={styles.span}>﷼ {proprice}</span>
-            <hr id={styles.hr} />
-            <div className={styles.countBox}>
-                <button className={styles.btn} onClick={() => {
-                    if (count >= 1) {
-                        setCount(count - 1);
-                    }
-                }}>-</button>
-                <span> {count} </span>
-                <button  className={styles.btn} onClick={() => {
-                    if (count+1 > promojoodi) {
-                        alert("You can not take more than stock")
-                    } else {
-                        setCount(count + 1);
-                    }
-                }}>+</button>
-                
+        <div className={`${styles.card} ${promojoodi === 0 ? styles.disabled : ""} ${promojoodi === 0 ? styles.disabled : ""}`}>
+
+
+            <span className={styles.stock}>
+                <span className={styles.span}>●</span>
+                {promojoodi > 0 ? " In Stock" : " Out of Stock"}
+            </span>
+
+            <div className={styles.image}>
+                <img src={proaks} alt={proname} />
             </div>
-            <p className={styles.promojoodi}>{promojoodi - count} Remained</p>
-        </div></div>
-       
+
+            <h2>{proname}</h2>
+
+            <p className={styles.info}>{proinfo}</p>
+
+            <h3 className={styles.price}>
+                {proprice} ﷼
+            </h3>
+
+            <hr />
+
+            <div className={styles.bottom}>
+
+                <div className={styles.buttons}>
+                    <button
+                        onClick={() => {
+                            if (count > 0) {
+                                setCount(count - 1);
+                            }
+                        }}
+                    >
+                        -
+                    </button>
+
+                    <span>{count}</span>
+
+                    <button
+                        onClick={() => {
+                            if (count < promojoodi) {
+                                setCount(count + 1);
+                            }
+                        }}
+                    >
+                        +
+                    </button>
+                </div>
+
+                <p className={styles.remaining}>
+                    {promojoodi - count} remaining
+                </p>
+
+            </div>
+
+        </div>
     );
 }
+
 export default ProductCard;

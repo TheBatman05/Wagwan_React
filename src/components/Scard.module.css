@@ -1,69 +1,4 @@
-/* #container{
-    width: 550px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 20px;
-    backdrop-filter: blur(14px);
-    padding: 28px;
-    color: #fefefe;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.18),
-        inset 0 1px 1px rgba(255, 255, 255, 0.08);
-}
-#ctitle{
-    margin-top: 5%;
-    font-size: 30px;
-    font-weight: 700;
-    color: rgba(254, 254, 254, );
-}
-#smalltxt{
-    margin-top: 8px;
-
-    font-size: 20px;
-
-    color: rgb(254, 254, 254,.7);
-}
-#num{
-    height: 50px;
-    width: 50px;
-    border-radius: 20px;
-    background-color: rgba(0,0,0,0.4);
-    position: relative;
-}
-#num span{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 23px;
-    color: #F5C451;
-}
-li{
-    color: rgb(245, 196, 81,.8);
-    font-size: 20x;
-}
-ul{
-    margin-top: 4%;
-}
-#sub{
-    width: 350px;
-    height: 50px;
-    margin-top: 5%;
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-} */
- #container {
+#container {
     width: 550px;
     height: 350px;
     position: relative;
@@ -74,11 +9,7 @@ ul{
     backdrop-filter: blur(14px);
     padding: 28px;
     color: #fefefe;
-    transition:
-        transform 0.35s ease,
-        background 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
+    transition:all 0.3 ease;
     cursor: pointer;
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.18),
@@ -94,10 +25,7 @@ ul{
     border-radius: 15px;
     background: rgba(107, 143, 113, 0.12);
     border: 1px solid rgba(107, 143, 113, 0.25);
-    transition:
-        background 0.35s ease,
-        border-color 0.35s ease,
-        transform 0.35s ease;
+    transition:all 0.3s ease
 }
 #num span {
     font-size: 21px;
@@ -146,12 +74,7 @@ li::marker {
     color: #A8C0A5;
     font-size: 15px;
     font-weight: 600;
-    transition:
-        background 0.3s ease,
-        border-color 0.3s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease,
-        transform 0.3s ease;
+    transition:all 0.3 ease
 }
 #container:hover {
     transform: translateY(-8px);
@@ -174,4 +97,61 @@ li::marker {
     box-shadow:
         0 0 18px rgba(107, 143, 113, 0.12);
     transform: translateX(-50%) translateY(-2px);
+}
+@media (max-width: 1000px) {
+    #container {
+        width: 85vw;
+        max-width: 550px;
+        box-sizing: border-box;
+    }
+    #ctitle {
+        font-size: 25px;
+    }
+    #smalltxt {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    #container {
+        width: calc(100vw - 40px);
+        max-width: 400px;
+        height: auto;
+        min-height: 330px;
+        padding: 22px;
+        padding-bottom: 70px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    #num {
+        width: 45px;
+        height: 45px;
+    }
+    #num span {
+        font-size: 19px;
+    }
+    #ctitle {
+        margin-top: 20px;
+        padding-right: 40px;
+        font-size: 21px;
+        line-height: 1.35;
+    }
+    #smalltxt {
+        margin-top: 10px;
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    ul {
+        margin-top: 17px;
+        padding-left: 18px;
+    }
+    li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    #sub {
+        width: calc(100% - 44px);
+        height: 45px;
+        bottom: 20px;
+    }
 }

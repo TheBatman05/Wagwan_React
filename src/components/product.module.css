@@ -1,100 +1,144 @@
-.khar{
-    color: #fefefe;
-    width: 25%;
-    height: 500px;
-   position: relative;
-   display: inline-block;
-   left: 5%;
-   right: 10px;
-   padding-right: 60px;
-   padding-top: 100px;
-   background-color: rgba(255, 255, 255, 0.07);
-   overflow: hidden;
-   border-radius: 20px;
-   margin-left: 15px;
-   margin-top: 10px;
-   transition: 0.3s linear;
-   
-
-
+.card {
+    /* width: 260px; */
+    width: 20%;
+    /* height: max-content; */
+    padding: 20px;
+    background-color: #0F232C;
+    color: #E4F3F6;
+    border: 1px solid #21404A;
+    border-radius: 20px;
+    text-align: left;
+    display: inline-block;
+     margin-left: 8%;
+    margin-top: 1%;
+    margin-bottom:2% ; 
+    /* margin-right: 5%; */
+    transition: all 0.2s linear;
 }
-.khar:hover{
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.10);
-    border-color: rgba(245, 196, 81, 0.3);
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.28),
-        0 0 25px rgba(245, 196, 81, 0.06),
-        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #22C7D6;
 }
-.aks2{
-    width: 180px;
+
+.disabled {
+    opacity: 0.55;
+
+    filter: grayscale(0.35);
+    animation: none;
+    pointer-events: none;
+}
+.disabled .stock {
+    color: #ff6b6b;
+
+    background: rgba(255, 107, 107, 0.08);
+
+    border-color: rgba(255, 107, 107, 0.15);
+    animation: none;
+}
+.stock {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    color: #22C7D6;
+    background-color: #17343D;
+
+    border-radius: 20px;
+    font-size: 12px;
+}
+.image {
     height: 180px;
-    position: absolute;
-    top: 10%;
-    left:50%;
-    transform: translateX(-50%);
-    border-radius: 20px;
-    object-fit: cover;
-}
-.aks{
-    width: 60%;
-    height: 260px;
-    background-color: rgba(255, 255, 255, 0.07);
-    position: absolute;
-    left:50%;
-    top: 2%;
-    transform: translateX(-50%);
-    border-radius: 18px;
-    border:  rgba(245, 196, 81, 0.63);
-}
-.shopcard h1{
-    position: absolute;
-    top: 2%;
-}
-.countBox{
-    position: absolute;
-    top: 88%;
-    right: 10%;
-}
-#name{
-    position: absolute;
-    top: 48%;
-    left: 5%;
-    text-align: center;
+    margin: 15px 0;
 
+    display: flex;
+   justify-content: center;
+    align-items: center;
 }
-.btn{
-    border: none;
-    color: #051131;
-    background-color: rgba(245, 196, 81, 100%);
-    width: 50px;
-    height: 30px;
-    border-radius: 20px;
+
+.image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.card h2 {
     font-size: 20px;
+    margin-bottom: 15px;
 }
-#span{
-    position: absolute;
-    top: 87%;
-    left: 10%;
-    font-size: 27px;
+
+.info {
+    height: 40px;
+    color: #9BB5BC;
+    font-size: 13px;
 }
-.promojoodi{
-    position: absolute;
-    top: 94%;
-    right: 11%;
+.price {
+    color: #F5C451;
+    font-size: 22px;
+    margin-top: 15px;
 }
-#details{
-    position: absolute
-    ;
-    top: 57%;
-    left: 5%;
-    color: rgb(157, 157, 157);
+.card hr {
+    border: none;
+    border-top: 1px solid #29414A;
+    margin: 20px 0;
 }
-#hr{
-    width: 90%;
-    position: absolute;
-    top: 80%;
-    left: 5%;
-    right: 5%;
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.span{
+    opacity: 1;
+    animation :chm 0.7s linear infinite alternate ;
+}
+@keyframes chm{
+    from{
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+    to{
+        opacity: 0;
+        /* transform: scale(1.2); */
+    }
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: #08141A;
+    border-radius: 10px;
+}
+.buttons button {
+    width: 30px;
+    height: 30px;
+    background-color: #17343D;
+    color: #22C7D6;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.buttons button:hover {
+    background-color: #22C7D6;
+    color: #08141A;
+    transform: scale(1.04);
+}
+.buttons span {
+    min-width: 15px;
+    text-align: center;
+}
+.remaining {
+    color: #F5C451;
+    font-size: 11px;
+}
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
 }

@@ -59,3 +59,74 @@ span{
 a{
     text-decoration: none;
 }
+@media (max-width: 1000px) {
+    #footerbox {
+        height: auto;
+        min-height: 230px;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+    #matnfooter {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    #grad {
+        font-size: 22px;
+    }
+    #asatid {
+        font-size: 14px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    #tashakor {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    #sepas {
+        font-size: 17px;
+    }
+    hr {
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    #footerbox {
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        padding: 20px 0 25px;
+        box-sizing: border-box;
+    }
+    #matnfooter {
+        font-size: 18px;
+        margin: 5px 20px 0;
+        text-align: left;
+    }
+    #grad {
+        font-size: 18px;
+    }
+    hr {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+    #asatid {
+        font-size: 12px;
+        margin: 20px;
+        line-height: 1.8;
+        text-align: center;
+    }
+    .salatin {
+        font-size: 12px;
+    }
+    #tashakor {
+        margin-top: 25px;
+        font-size: 22px;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+    #sepas {
+        font-size: 15px;
+        margin: 0;
+    }
+}

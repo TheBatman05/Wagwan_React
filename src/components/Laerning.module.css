@@ -316,3 +316,313 @@
     text-align: center;
     margin-top: 2%;
 }
+@media (max-width: 1000px) {
+    #trickspage {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+    #title {
+        font-size: 42px;
+        margin-top: 8%;
+        padding: 0 20px;
+    }
+    #smalltxt {
+        font-size: 17px;
+        line-height: 1.7;
+        padding: 0 30px;
+    }
+    .container {
+        width: 90%;
+        height: 1000px;
+        padding-left: 0;
+        margin: 50px auto 0;
+    }
+    #timeline {
+        height: 850px;
+        width: 2px;
+        transform: none;
+        top: 50px;
+        left: 25px;
+    }
+    .numberbox {
+        left: 10px;
+    }
+    .tricksbox {
+        width: calc(100% - 80px);
+        left: 60px;
+        box-sizing: border-box;
+    }
+    .matnbox {
+        font-size: 21px;
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    .matnbox2 {
+        font-size: 14px;
+        line-height: 1.7;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    .box2 {
+        top: 235px;
+    }
+    .matnbox3 {
+        top: 180px;
+    }
+    .box3 {
+        top: 420px;
+    }
+    .matnbox4 {
+        top: 360px;
+    }
+    .box4 {
+        top: 610px;
+    }
+    .matnbox5 {
+        top: 550px;
+    }
+    .box5 {
+        top: 800px;
+    }
+    .matnbox6 {
+        top: 740px;
+    }
+    #real {
+        font-size: 27px;
+        margin-top: 180px;
+        padding: 0 20px;
+    }
+    #bbcontainer {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .bigbox {
+        width: 75%;
+        height: auto;
+        min-height: 160px;
+        box-sizing: border-box;
+    }
+    .amoozesh {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .amoozesh2 {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    #lastbox {
+        width: 80%;
+        height: 350px;
+        margin: 180px auto 0;
+        transform: none;
+        box-sizing: border-box;
+    }
+    #samplematn {
+        left: auto;
+        right: 30px;
+    }
+    #hr2 {
+        width: calc(100% - 60px);
+    }
+    #lastp {
+        font-size: 14px;
+        line-height: 1.7;
+        left: 30px;
+        right: 30px;
+        overflow-wrap: break-word;
+    }
+}
+@media (max-width: 600px) {
+    #trickspage {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 80px;
+        overflow-x: hidden;
+    }
+    #about {
+        font-size: 13px;
+        width: 70px;
+        height: 18px;
+        transform: translate(-50%, -180%);
+    }
+    #title {
+        font-size: 31px;
+        line-height: 1.3;
+        margin-top: 15%;
+        padding: 0 15px;
+    }
+    #smalltxt {
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 0 20px;
+        margin-top: 5%;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 1180px;
+        padding: 0;
+        margin: 45px 0 0;
+    }
+    #timeline {
+        width: 2px;
+        height: 1050px;
+        transform: none;
+        top: 30px;
+        left: 24px;
+    }
+    .numberbox {
+        width: 24px;
+        height: 24px;
+        left: 11px;
+        top: 35px;
+        box-sizing: border-box;
+        padding-top: 3px;
+        font-size: 13px;
+        z-index: 2;
+    }
+    .tricksbox {
+        width: calc(100% - 65px);
+        height: auto;
+        min-height: 180px;
+        left: 55px;
+        box-sizing: border-box;
+        border-radius: 18px;
+        padding-bottom: 20px;
+    }
+    .matnbox {
+        font-size: 18px;
+        line-height: 1.4;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+    .matnbox2 {
+        font-size: 13px;
+        line-height: 1.7;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+    .box2 {
+        top: 255px;
+    }
+    .matnbox3 {
+        top: 205px;
+    }
+    .box3 {
+        top: 475px;
+    }
+    .matnbox4 {
+        top: 425px;
+    }
+    .box4 {
+        top: 695px;
+    }
+    .matnbox5 {
+        top: 645px;
+    }
+    .box5 {
+        top: 925px;
+    }
+    .matnbox6 {
+        top: 875px;
+    }
+    #real {
+        font-size: 23px;
+        line-height: 1.4;
+        margin-top: 120px;
+        padding: 0 20px;
+    }
+    #realproject {
+        font-size: 13px;
+        line-height: 1.7;
+        padding: 0 25px;
+    }
+    #bbcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 8px;
+        padding: 0 12px;
+        box-sizing: border-box;
+        margin-top: 25px;
+    }
+    .bigbox {
+        width: calc((100% - 16px) / 3);
+        min-height: 210px;
+        height: auto;
+        margin-top: 0;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding-bottom: 15px;
+    }
+    .amoozesh {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .amoozesh2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+    #lastbox {
+        width: calc(100% - 40px);
+        height: auto;
+        min-height: 350px;
+        margin: 70px auto 0;
+        transform: none;
+        box-sizing: border-box;
+        border-radius: 18px;
+    }
+    .rangbox {
+        width: 9px;
+        height: 9px;
+        left: 20px;
+        top: 20px;
+    }
+    .green {
+        left: 45px;
+    }
+    .yellow {
+        left: 70px;
+    }
+    #samplematn {
+        left: auto;
+        right: 20px;
+        top: 13px;
+        font-size: 16px;
+    }
+    #hr2 {
+        top: 60px;
+        left: 20px;
+        width: calc(100% - 40px);
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #lastp {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 90px 20px 0;
+        font-size: 12px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+        white-space: pre-wrap;
+    }
+}
