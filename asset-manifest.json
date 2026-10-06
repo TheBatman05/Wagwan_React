@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Wagwan_React/static/css/main.b2b6fd05.css",
+    "main.css": "/Wagwan_React/static/css/main.496eee42.css",
     "main.js": "/Wagwan_React/static/js/main.b795012a.js",
     "static/js/453.fca17cf2.chunk.js": "/Wagwan_React/static/js/453.fca17cf2.chunk.js",
     "static/media/Lato-Italic.ttf": "/Wagwan_React/static/media/Lato-Italic.a9f3ee269217f44df65f.ttf",
     "static/media/Lato-Regular.ttf": "/Wagwan_React/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "static/media/logo.svg": "/Wagwan_React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Wagwan_React/index.html",
-    "main.b2b6fd05.css.map": "/Wagwan_React/static/css/main.b2b6fd05.css.map",
+    "main.496eee42.css.map": "/Wagwan_React/static/css/main.496eee42.css.map",
     "main.b795012a.js.map": "/Wagwan_React/static/js/main.b795012a.js.map",
     "453.fca17cf2.chunk.js.map": "/Wagwan_React/static/js/453.fca17cf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2b6fd05.css",
+    "static/css/main.496eee42.css",
     "static/js/main.b795012a.js"
   ]
 }
