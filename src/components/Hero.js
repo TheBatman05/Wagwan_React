@@ -14,7 +14,7 @@ const Hero = () =>{
                 </p>
                 <div id={styles.btncontainer}>
                     <Link to="/Services"><button className={styles.btn} id={styles.services}>
-                        Our Services →
+                        <span id={styles.text}>Our Services</span><span id={styles.arrow}> →</span>
                     </button></Link>
                     <Link to="/About"><button className={styles.btn} id={styles.us}>
                         About Us!
@@ -25,7 +25,7 @@ const Hero = () =>{
                         Want to learn React and Front-End development? <br />
                         <span id={styles.smalltxt}>Click below and start your journey with our practical tutorials.</span>
                     </p>
-                    <button>Enter learning page</button>
+                    <Link to="/Learning"><button>Enter learning page</button></Link>
                 </div>
             </div>
     );

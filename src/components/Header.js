@@ -8,7 +8,12 @@ const Header = () =>{
         <div id={styles.header}>
             <div id={styles.container}>
                 <div id={styles.brand}>
-                    <img src="muppet.jpg" alt="group-picture" id={styles.img} />
+                    {/* <img src="/muppet.jpg" alt="group-picture" id={styles.img} /> */}
+                    <img
+    src={`${process.env.PUBLIC_URL}/muppet.jpg`}
+    alt="group-picture"
+    id={styles.img}
+/>
                     <p id={styles.name}>Wagwan Team</p>
                 </div>
                 {/* <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>

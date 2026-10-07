@@ -1,6 +1,8 @@
-import styles from "./About.module.css"
-import Teamcard from "./Teamcard"
-import Strengths from "./Strengths"
+import styles from "./About.module.css";
+import Teamcard from "./Teamcard";
+import Strengths from "./Strengths";
+import { Link } from "react-router-dom";
+
 const About = () =>{
     return(
         <div id ={styles.container}>
@@ -69,7 +71,7 @@ const About = () =>{
                         Have an idea for your website? <br />
                         <span id={styles.smalltxt}>Get in touch with our team and let’s turn your idea into a modern,<br /> practical, and engaging digital experience.</span>
                     </p>
-                    <button>Get in Touch →</button>
+                    <Link to="/Contact"><button>Get in Touch →</button></Link>
             </div>
 
         </div>

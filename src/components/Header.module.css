@@ -97,7 +97,7 @@
     }
     #brand {
         position: absolute;
-        left: 50%;
+        left: 52%;
         transform: translateX(-50%);
         white-space: nowrap;
     }
@@ -115,6 +115,7 @@
         left: 15px;
         right: auto;
         font-size: 10px;
+        display: inline;
     }
 
     #menuButton {
@@ -140,6 +141,7 @@
         flex-direction: column;
         background-color: #0F232C;
         padding: 15px 0;
+        z-index: 99;
     }
     #container ul.open {
         display: flex;
@@ -147,10 +149,11 @@
     #header,
     #container {
         max-width: 100%;
+        overflow: visible;
     }
-    #header {
+    /* #header {
         overflow-x: clip;
-    }
+    } */
     .item {
         width: 100%;
         padding: 5px 0;

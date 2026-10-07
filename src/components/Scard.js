@@ -1,4 +1,5 @@
-import styles from "./Scard.module.css"
+import styles from "./Scard.module.css";
+import { Link } from "react-router-dom";
 const Scard=(props)=>{
     return(
         <div id={styles.container}>
@@ -10,9 +11,11 @@ const Scard=(props)=>{
                 <li>{props.li2}</li>
                 <li>{props.li3}</li>
             </ul>
-            <div id={styles.sub}>
-                Get Started
-            </div>
+            <Link to="/Contact">
+                <div id={styles.sub}>
+                    Get Started
+                </div>
+            </Link>
         </div>
     );
 };

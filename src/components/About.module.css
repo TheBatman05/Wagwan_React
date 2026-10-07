@@ -93,6 +93,7 @@ border: 1px solid rgba(255, 255, 255, 0.25);
     top: 50%;
     transform: translateY(-50%);
     background-color: #F5C451;
+    color: black;
 }
 #card:hover {
     transform: translate(-50%,0) scale(1.01);

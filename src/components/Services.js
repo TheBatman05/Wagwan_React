@@ -1,5 +1,7 @@
-import styles from "./Services.module.css"
-import Scard from "./Scard"
+import styles from "./Services.module.css";
+import Scard from "./Scard";
+import { Link } from "react-router-dom";
+
 const Services = ()=>{
     return(
         <div id={styles.container}>
@@ -51,7 +53,7 @@ const Services = ()=>{
                         Have a Different Project in Mind? <br />
                         <span id={styles.smalltxt}>Share the specific details of your project with us,<br /> and we’ll get back to you as soon as possible to discuss your needs.</span>
                     </p>
-                    <button>Request a Quote →</button>
+                    <Link to="/Contact"><button>Request a Quote →</button></Link>
             </div>
         </div>
     );
