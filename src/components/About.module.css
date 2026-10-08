@@ -102,6 +102,18 @@ border: 1px solid rgba(255, 255, 255, 0.25);
         0 0 25px rgba(245, 196, 81, 0.06),
         inset 0 1px 1px rgba(255, 255, 255, 0.12);
 }
+#card button:hover #text{
+    margin-right: 3%;
+}
+#card button:hover #arrow{
+    margin-left: 3%;
+}
+#text{
+    transition: 0.3s ease;
+}
+#arrow{
+    transition: 0.3s ease;
+}
 #txtbox{
     transform: translateY(-20%);
 }

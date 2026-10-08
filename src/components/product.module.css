@@ -13,7 +13,7 @@
     margin-top: 1%;
     margin-bottom:2% ; 
     /* margin-right: 5%; */
-    transition: all 0.2s linear;
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -40,10 +40,8 @@
     display: inline-block;
 
     padding: 6px 10px;
-
     color: #22C7D6;
     background-color: #17343D;
-
     border-radius: 20px;
     font-size: 12px;
 }
@@ -72,11 +70,40 @@
     height: 40px;
     color: #9BB5BC;
     font-size: 13px;
+     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     transition: height 0.3s ease;
+}
+.info:hover {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow-y: auto;
+    height: 60px;
+}
+
+.info::-webkit-scrollbar {
+    width: 4px;
+}
+.info::-webkit-scrollbar-track {
+    background: transparent;
+}
+.info::-webkit-scrollbar-thumb {
+    background: #29414A;
+    border-radius: 4px;
+}
+.info::-webkit-scrollbar-thumb:hover {
+    background: #22C7D6;
 }
 .price {
     color: #F5C451;
     font-size: 22px;
     margin-top: 15px;
+    background: rgba(15, 35, 44, 0.75);
+    backdrop-filter: blur(8px);
+    width: 70%;
+    
 }
 .card hr {
     border: none;
@@ -120,7 +147,7 @@
     border-radius: 7px;
     font-size: 18px;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.3 linear;
 }
 .buttons button:hover {
     background-color: #22C7D6;
@@ -140,5 +167,30 @@
         width: 100%;
         max-width: 300px;
         box-sizing: border-box;
+        margin-left: 50%;
+        transform: translateX(-14%);
     }
+}
+.buy {
+    padding: 8px 18px;
+    background-color: #22C7D6;
+    color: #08141A;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    width: 110px;
+    height: 40px;
+}
+
+.buy:hover {
+    background-color: #17343D;
+    color: #22C7D6;
+    transform: scale(1.04);
+}
+.disabled2 {
+    pointer-events: none;
+    display: none;
 }

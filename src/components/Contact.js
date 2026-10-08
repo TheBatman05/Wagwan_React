@@ -16,7 +16,7 @@ const Contact = () =>{
                 <div className={styles.inputmastext}> <label htmlFor="mastext">Message Text :</label><br /><input type="text" placeholder="Write a brief description of your request or question…" id="mastext" className={styles.mastext} /> </div>
                 <input type="submit" id={styles.butten} value="Send Message" /></div>
                 <div className={`${styles.box} ${styles.box2}`}> <p className={styles.maillogo}>✉</p><p className={styles.mailmatn}>Group's Direct Email</p> <p className={styles.mail}>wagwanteam@gmail.com <br /> wagwanteamsupport@gmail.com</p></div>
-                <div className={`${styles.box} ${styles.box3}`}><p className={styles.maillogo}>📞</p><p className={styles.mailmatn}>Phone Number and Messenger</p> <p className={styles.mail}>+98 917 490 7786 <br /> +98 902 986 6160</p></div>
+                <div className={`${styles.box} ${styles.box3}`}><p className={styles.phonelogo}>📞</p><p className={styles.mailmatn}>Phone Number and Messenger</p> <p className={styles.mail}>+98 917 490 7786 <br /> +98 902 986 6160</p></div>
                 <div className={`${styles.box} ${styles.box4}`}><p className={styles.maillogo}>◷</p><p className={styles.mailmatn}>Response Time</p> <p className={styles.mail}>Saturday to Wednesday: 9 AM - 9 PM <br />
 Thursday: 9 AM – 1 PM</p></div> 
             </div>

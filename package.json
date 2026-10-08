@@ -2,7 +2,6 @@
   "name": "react-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TheBatman05.github.io/Wagwan_React/",
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",

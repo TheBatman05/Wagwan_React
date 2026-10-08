@@ -5,7 +5,7 @@ import ProductCard from "./Shopcard";
 const Shop = () =>{
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8000/api/products/')
+        fetch('http://api.amiranco.net/api/products')
         .then(res => res.json())
         .then(response => setProducts(response))
         .catch(err => alert(`failed to fetch products ! ${err}`));

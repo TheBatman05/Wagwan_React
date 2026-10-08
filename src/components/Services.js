@@ -53,7 +53,7 @@ const Services = ()=>{
                         Have a Different Project in Mind? <br />
                         <span id={styles.smalltxt}>Share the specific details of your project with us,<br /> and we’ll get back to you as soon as possible to discuss your needs.</span>
                     </p>
-                    <Link to="/Contact"><button>Request a Quote →</button></Link>
+                    <Link to="/Contact"><button><span id={styles.text}>Request a Quote</span><span id={styles.arrow}> →</span></button></Link>
             </div>
         </div>
     );

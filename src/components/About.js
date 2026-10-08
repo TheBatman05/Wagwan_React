@@ -15,14 +15,14 @@ const About = () =>{
             </p>
             <div id={styles.cardcontainer}>
                 <Teamcard
-                    img ="./muppet.jpg"
+                    img ={`${process.env.PUBLIC_URL}/muppet.jpg`}
                     name ="Abolfazl Kharazmi"
                     desc ="21-year-old Computer Engineering student & Front-End Developer. 
                     Passionate about JavaScript, 
                     Back-End development, and building modern web experiences."
                 />
                 <Teamcard
-                    img ="./muppet.jpg"
+                    img ={`${process.env.PUBLIC_URL}/muppet.jpg`}
                     name ="Parsa Shabani"
                     desc ="20-year-old Computer Engineering student & Front-End Developer. 
                     Skilled in JavaScript, 
@@ -71,7 +71,7 @@ const About = () =>{
                         Have an idea for your website? <br />
                         <span id={styles.smalltxt}>Get in touch with our team and let’s turn your idea into a modern,<br /> practical, and engaging digital experience.</span>
                     </p>
-                    <Link to="/Contact"><button>Get in Touch →</button></Link>
+                    <Link to="/Contact"><button><span id={styles.text}>Get in Touch</span><span id={styles.arrow}> →</span></button></Link>
             </div>
 
         </div>

@@ -80,6 +80,12 @@
     left: 5%;
     top: 2%;
 }
+.phonelogo{
+    font-size: 25px;
+    position: absolute;
+    left:4%;
+    top: 4%;  
+}
 .mailmatn{
     color: #fefefe;
     position: absolute;

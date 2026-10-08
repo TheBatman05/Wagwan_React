@@ -29,7 +29,15 @@ function ProductCard({ proname, proaks, proinfo, proprice, promojoodi }) {
             <hr />
 
             <div className={styles.bottom}>
-
+                <button
+                        className={`${styles.buy} ${count >= 1 ? styles.disabled2 : ""}`}
+                        onClick={() => {
+                            if (promojoodi > 0) {
+                                setCount(1);
+                            }}}
+                    >
+                        Buy
+                    </button>
                 <div className={styles.buttons}>
                     <button
                         onClick={() => {

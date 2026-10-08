@@ -12,7 +12,7 @@ import Shop from "./components/Shop"
 
 function App() {
   return(
-  <BrowserRouter basename="/Wagwan_React">
+  <BrowserRouter>
     <>
       <Header />
       {/* <Hero /> */}
